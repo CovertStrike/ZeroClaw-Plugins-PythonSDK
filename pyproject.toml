@@ -1,0 +1,91 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zeroclaw-plugin-sdk"
+version = "0.1.0"
+description = "Python SDK for building ZeroClaw WASM plugins"
+readme = "README.md"
+license = { text = "MIT OR Apache-2.0" }
+requires-python = ">=3.10"
+authors = [
+    { name = "ZeroClaw Community" }
+]
+keywords = [
+    "zeroclaw",
+    "plugin",
+    "wasm",
+    "webassembly",
+    "extism",
+    "sdk",
+    "ai",
+    "agent",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    # Note: extism-pdk is provided by the extism-py WASM runtime, not PyPI
+    # The SDK modules only work when compiled to WASM with extism-py
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+zeroclaw-plugin = "zeroclaw_plugin_cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK"
+Documentation = "https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK#readme"
+Repository = "https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK"
+Issues = "https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK/issues"
+Changelog = "https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/zeroclaw_plugin_sdk", "src/zeroclaw_plugin_cli"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+    "/examples",
+    "/README.md",
+    "/LICENSE-MIT",
+    "/LICENSE-APACHE",
+    "/CHANGELOG.md",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "C4", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
