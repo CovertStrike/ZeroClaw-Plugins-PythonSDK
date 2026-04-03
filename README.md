@@ -1,6 +1,6 @@
 # zeroclaw-plugin-sdk
 
-[![CI](https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK/actions/workflows/ci.yml/badge.svg)](https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK/actions/workflows/ci.yml)
+[![CI](https://github.com/CovertStrike/ZeroClaw-Plugins-PythonSDK/actions/workflows/ci.yml/badge.svg)](https://github.com/CovertStrike/ZeroClaw-Plugins-PythonSDK/actions/workflows/ci.yml)
 [![PyPI version](https://badge.fury.io/py/zeroclaw-plugin-sdk.svg)](https://pypi.org/project/zeroclaw-plugin-sdk/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE-MIT)
@@ -305,7 +305,7 @@ zeroclaw-plugin build smart_greeter.py --name "Smart Greeter" --description "Con
 ## Development
 
 ```bash
-git clone https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK
+git clone https://github.com/CovertStrike/ZeroClaw-Plugins-PythonSDK
 cd Zeroclaw-Plugin-PythonSDK
 pip install -e ".[dev]"
 pytest

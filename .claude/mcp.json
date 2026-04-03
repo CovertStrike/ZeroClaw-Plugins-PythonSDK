@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "projectman": {
+      "type": "sse",
+      "url": "http://localhost:22020/sse"
+    }
+  }
+}

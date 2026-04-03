@@ -1,0 +1,8 @@
+name: zeroclaw-pythonsdk
+prefix: ZPY
+description: "Auto-initialized by Orchestrator Runner"
+repo: ""
+hub: false
+next_story_id: 1
+next_epic_id: 1
+

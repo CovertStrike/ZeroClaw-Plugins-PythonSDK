@@ -25,5 +25,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Example plugins
 - GitHub Actions for CI and automated PyPI publishing
 
-[Unreleased]: https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/Biztactix-Ryan/Zeroclaw-Plugin-PythonSDK/releases/tag/v0.1.0
+[Unreleased]: https://github.com/CovertStrike/ZeroClaw-Plugins-PythonSDK/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/CovertStrike/ZeroClaw-Plugins-PythonSDK/releases/tag/v0.1.0
