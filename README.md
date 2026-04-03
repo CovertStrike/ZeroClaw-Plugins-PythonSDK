@@ -5,7 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue.svg)](LICENSE-MIT)
 
-Python SDK for building [ZeroClaw](https://github.com/Biztactix-Ryan/zeroclaw) WASM plugins.
+Python SDK for building [ZeroClaw](https://github.com/CovertStrike/ZeroClaw) WASM plugins.
 
 Write Python plugins that compile to WebAssembly and run inside ZeroClaw, with access to memory, messaging, tools, and session context.
 
@@ -317,5 +317,5 @@ Dual-licensed under MIT or Apache 2.0, at your option.
 
 ## Related Projects
 
-- [ZeroClaw](https://github.com/Biztactix-Ryan/zeroclaw) — The main ZeroClaw project
+- [ZeroClaw](https://github.com/CovertStrike/ZeroClaw) — The main ZeroClaw project
 - [Extism](https://extism.org/) — The WebAssembly plugin system this SDK builds on
